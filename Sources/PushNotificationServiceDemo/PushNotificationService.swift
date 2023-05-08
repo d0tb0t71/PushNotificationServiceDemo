@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseMessaging
 
-public class PushNotificationService{
+public struct PushNotificationService{
     
     public func subscribeToTopic(_ topic: String) {
         Messaging.messaging().subscribe(toTopic: topic) { error in
