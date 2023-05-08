@@ -10,7 +10,7 @@ import FirebaseMessaging
 
 public class PushNotificationService{
     
-    func subscribeToTopic(_ topic: String) {
+    public func subscribeToTopic(_ topic: String) {
         Messaging.messaging().subscribe(toTopic: topic) { error in
             if let error = error {
                 print(":::Error subscribing to topic \(topic): \(error.localizedDescription)")
